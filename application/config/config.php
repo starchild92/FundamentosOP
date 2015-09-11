@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/foc/';
+$config['base_url'] = 'http://localhost/FundamentosOP/';
 
 /*
 |--------------------------------------------------------------------------

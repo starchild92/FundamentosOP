@@ -101,6 +101,7 @@
 	<script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
 	<script src="<?php echo base_url('js/bootstrap.js'); ?>"></script>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
-	<style type="text/css"> #space{ padding-top: 20px; }</style>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/my_styles.css');?>">
+	<style type="text/css"> #space{ padding-top: 20px; } body{ background-image: url("<?php echo base_url('images/fondo-general.png'); ?>"); background-repeat: repeat; }</style>
 </body>
 </html>

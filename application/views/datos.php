@@ -105,6 +105,6 @@
 			text-align: right;
 			font-style: oblique;
 		}
-	</style>
+	body{ background-image: url("<?php echo base_url('images/fondo-general.png'); ?>"); background-repeat: repeat; }</style>
 </body>
 </html>

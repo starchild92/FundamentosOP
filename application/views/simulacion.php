@@ -66,6 +66,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
 	<style type="text/css"> 
 		#space{ padding-top: 20px; }
-		.auto-size{ max-width: 100%; max-height: 100%; } </style>
+		.auto-size{ max-width: 100%; max-height: 100%; }
+	body{ background-image: url("<?php echo base_url('images/fondo-general.png'); ?>"); background-repeat: repeat; }</style>
 </body>
 </html>
