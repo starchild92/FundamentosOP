@@ -1,0 +1,12 @@
+for GitHub
+	0. git ini
+	1. git status
+	2. git add (the changed files)
+	3. git push -u origin master
+
+Ubicar los siguientes puntos en alguna parte de la página
+	- La aproximación de la situación real del sistema de cola estudiado a uno de los modelos de colas Poisson vistos en clase.
+
+	- Las medidas de eficiencia: número esperado de clientes en el sistema, longitud esperada de la cola, tiempo esperado de espera en el sistema, tiempo esperado de espera en la cola, número estimado de servidores activos y porcentaje de utilización del servicio.
+
+	- Las recomendaciones por parte de su equipo, en función de los datos obtenidos.
