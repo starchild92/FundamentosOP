@@ -3,11 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Proyecto de F.O.C - Información</title>
+	<script src="<?php echo base_url('js/bootstrap.js'); ?>"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
+	<style type="text/css"> 
+		#space{ padding-top: 20px; }
+		.auto-size{ max-width: 100%; max-height: 100%; }
+	body{ background-image: url("<?php echo base_url('images/fondo-general.png'); ?>"); background-repeat: repeat; }</style>
 </head>
 <body>
-	
 	<?php include_once('menu.php'); ?>
-
+	
 	<div class="container">
 		<div class="page-header">
 			<h1><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Programa de Simulación<small>  de la línea de espera del comedor universitario</small></h1>
@@ -62,11 +67,5 @@
 		<!-- Final Primera Gráfica -->
 	</div>
 	<?php include_once('footer.php'); ?>
-	<script src="<?php echo base_url('js/bootstrap.js'); ?>"></script>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
-	<style type="text/css"> 
-		#space{ padding-top: 20px; }
-		.auto-size{ max-width: 100%; max-height: 100%; }
-	body{ background-image: url("<?php echo base_url('images/fondo-general.png'); ?>"); background-repeat: repeat; }</style>
 </body>
 </html>
