@@ -9,29 +9,62 @@
 		</div>
 
 		<script type="text/javascript">
-			/** Wait till dom's finished loading **/
+			function factorial(number){
+				if(number < 2){
+					return 1;
+				}else{
+					return (number * factorial(number-1));
+				}
+			}
+
+			function poissonG(lambda, k){
+				var e;
+				var a;
+				var b;
+				var c;
+
+				e = Math.exp(1);
+				a = Math.pow(e, (-1 * lambda));
+				b = Math.pow(lambda,k);
+				c = factorial(k);
+
+				return a * b / c;
+			}
+			/*La primera vez se ejecuta cuando se termina de cargar la pagina*/
 			document.observe('dom:loaded', function(){
-				function factorial(number){
-					if(number < 2){
-						return 1;
-					}else{
-						return (number * factorial(number-1));
-					}
-				}
-
-				function poissonG(lambda, k){
-					var e;
-					var a;
-					var b;
-					var c;
-
-					e = Math.exp(1);
-					a = Math.pow(e, (-1 * lambda));
-					b = Math.pow(lambda,k);
-					c = factorial(k);
-
-					return a * b / c;
-				}
+				/** Fill series d1 and d2 **/
+				var d0 = [];
+				var omega = document.getElementById("lambda").value;
+				var phi = document.getElementById("k").value;
+			    for(var i = 0; i <= phi; i += 1){
+			        d0.push([i, poissonG(omega,i)]);
+			    }
+				/*** Draw the graph ***/
+			    f = Flotr.draw($('container1'),[  
+						{data:d0, label:'lambda: '+omega+'  y k:[0...'+phi+']', yaxis:1,  lines: {show: true}, points: {show: true}}
+					],{
+						xaxis:{
+							noTicks: 10,
+							tickFormatter: function(n){ return n; }, // => displays tick values between brackets.
+							min: 0,	 // => part of the series is not displayed.
+							max: null,	// => part of the series is not displayed.
+							labelsAngle: 45,
+							title: 'k'
+						},
+						yaxis:{
+							noTicks: 10,
+							max: 1
+							//title: 'P(X=k)'
+						},
+						HtmlText: true,
+						legend: {
+							position: 'ne'
+						}
+				});
+			    //This is the end of draw
+			});
+			/*Aqui se ejecuta cuando hay un cambio en un form de la pagina*/
+			document.addEventListener("change", function(){
 				/** Fill series d1 and d2 **/
 				var d0 = [];
 				var omega = document.getElementById("lambda").value;
