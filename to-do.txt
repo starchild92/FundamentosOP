@@ -5,6 +5,7 @@ for GitHub
 	3. git push -u origin master
 
 Ubicar los siguientes puntos en alguna parte de la página
+
 	- La aproximación de la situación real del sistema de cola estudiado a uno de los modelos de colas Poisson vistos en clase.
 
 	- Las medidas de eficiencia: número esperado de clientes en el sistema, longitud esperada de la cola, tiempo esperado de espera en el sistema, tiempo esperado de espera en la cola, número estimado de servidores activos y porcentaje de utilización del servicio.

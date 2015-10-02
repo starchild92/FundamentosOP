@@ -9,9 +9,8 @@
 	<style type="text/css"> 
 		#space{ padding-top: 20px; }
 		.auto-size{ max-width: 100%; max-height: 100%; }
-		#lambda, #k{ width: 150% }
-		body{ background-image: url("<?php echo base_url('images/fondo-general.png'); ?>"); background-repeat: repeat; }
 	</style>
+
 </head>
 <body>
 	<?php include_once('menu.php'); ?>
@@ -22,8 +21,8 @@
 		</div>
 		<!-- Inicio Primera Gráfica -->
 		<div class="row">
-			<div class="col-md-8">
-				<div class="panel panel-primary">
+			<div class="col-lg- 8 col-md-8 col-xs-12">
+				<div class="panel panel-success">
 					<!--<div class="panel-heading">_</div>-->
 					<div class="panel-body">
 						<?php $this->load->view('flotr_simulacion') ?>
@@ -31,7 +30,7 @@
 					<!--<div class="panel-footer">__</div>-->
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-lg- 4 col-md-4 col-xs-12">
 				<div class="panel panel-warning">
 					<div class="panel-heading">Parámetros de Control</div>
 					<div class="panel-body">
@@ -40,13 +39,16 @@
 							<img class="auto-size" src="<?php echo base_url('images/poisson.png'); ?>">
 						</center>
 						<hr>
-						<form name="form1" method="POST" action="<?php echo base_url('simulacion/value'); ?>">
-							<div class="col-lg-12">
-								<span class="label label-primary">Lambda</span>
+						<p id="cambio">Cambie los valores de <span class="label label-info">Lambda λ</span> o <span class="label label-info">k</span>para modificar la curva.</p>
+						<form name="form1" method="POST" action="">
+							<div class="col-lg-6 col-sm-6 col-xs 6">
+								<span class="label label-success">Lambda</span>
 								<div class="input-group">
 									<input autocomplete="off" type="text" class="form-control" name="valor" value="<?php echo $valor; ?>" id="lambda" onkeyup="graficar()">
 								</div><!-- input group end -->
-								<span class="label label-primary">K</span>
+							</div>
+							<div class="col-lg-6 col-sm-6 col-xs 6">
+								<span class="label label-success">K</span>
 								<div class="input-group">
 									<input autocomplete="off" type="text" class="form-control" name="k" value="<?php echo $k; ?>" id="k" onkeyup="graficar()">
 								</div><!-- input group end -->
@@ -54,8 +56,8 @@
 						</form>
 					</div>
 				</div>
-				<p><span class="label label-primary">Lambda</span> es la tasa media de ocurrencia de los sucesos (llegadas o servicio)</p>
-				<p><span class="label label-primary">K</span> es la ocurrencia del fénomeno</p>
+				<div class="col-lg-6 col-sm-6 col-xs 6"><p><span class="label label-success">Lambda</span> es la tasa media de ocurrencia de los sucesos (llegadas o servicio)</p></div>
+				<div class="col-lg-6 col-sm-6 col-xs 6"><p><span class="label label-success">K</span> es la ocurrencia del fénomeno</p></div>
 			</div>
 		</div>
 		<!-- Final Primera Gráfica -->

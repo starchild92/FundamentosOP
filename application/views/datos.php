@@ -47,7 +47,7 @@
 								<tr><td>12:45:00</td><td>12:50:00</td><td>21</td></tr>
 								<tr><td>12:50:00</td><td>12:52:00</td><td>18</td></tr>
 								<tr><td>12:55:00</td><td>01:00:00</td><td>-</td></tr>
-								<tr><td colspan="2">Media</td><td>19 Clientes</td></tr>
+								<tr><td colspan="2">Media</td><td>19 Clientes cada 5 min</td></tr>
 							</tbody>
 						</table></div>
 					</div>
@@ -105,6 +105,5 @@
 			text-align: right;
 			font-style: oblique;
 		}
-	body{ background-image: url("<?php echo base_url('images/fondo-general.png'); ?>"); background-repeat: repeat; }</style>
 </body>
 </html>
