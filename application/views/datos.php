@@ -27,6 +27,9 @@
 		    <div role="tabpanel" class="tab-pane active" id="dia1">
 		    	<div class="row">
 		    		<div class="col-lg-6 col-sm-6 col-xs-12">
+		    			say something I'm giving up on you
+		    		</div>
+		    		<div class="col-lg-6 col-sm-6 col-xs-12">
 						<div class="panel panel-primary">
 							<div class="panel-heading">Día 1<small id="rigth">Martes, 04 de Agosto 2015</small></div>
 							<div class="panel-body">
@@ -90,6 +93,9 @@
 		    </div>
 		    <div role="tabpanel" class="tab-pane" id="dia2">
 		    	<div class="row">
+		    		<div class="col-lg-6 col-sm-6 col-xs-12">
+		    			say something I'm giving up on you
+		    		</div>
 		    		<div class="col-lg-6 col-sm-6 col-xs-12">
 						<div class="panel panel-primary">
 							<div class="panel-heading">Día 2 <small id="rigth">Miércoles, 05 de Agosto 2015</small></div>
@@ -155,6 +161,9 @@
 		    <div role="tabpanel" class="tab-pane" id="dia3">
 		    	<div class="row">
 		    		<div class="col-lg-6 col-sm-6 col-xs-12">
+		    			say something I'm giving up on you
+		    		</div>
+		    		<div class="col-lg-6 col-sm-6 col-xs-12">
 						<div class="panel panel-primary">
 							<div class="panel-heading">Día 3 <small id="rigth">Jueves, 06 de Agosto 2015</small></div>
 							<div class="panel-body">
@@ -219,6 +228,9 @@
 		    <div role="tabpanel" class="tab-pane" id="dia4">
 		    	<div class="row">
 		    		<div class="col-lg-6 col-sm-6 col-xs-12">
+		    			say something I'm giving up on you
+		    		</div>
+		    		<div class="col-lg-6 col-sm-6 col-xs-12">
 						<div class="panel panel-primary">
 							<div class="panel-heading">Día 4 <small id="rigth">Viernes, 07 de Agosto 2015</small></div>
 							<div class="panel-body">
@@ -282,6 +294,9 @@
 		    </div>
 		    <div role="tabpanel" class="tab-pane" id="dia5">
 		    	<div class="row">
+					<div class="col-lg-6 col-sm-6 col-xs-12">
+						say something I'm giving up on you
+					</div>
 					<div class="col-lg-6 col-sm-6 col-xs-12">
 						<div class="panel panel-primary">
 							<div class="panel-heading">Día 5 <small id="rigth">Jueves, 01 de Octubre 2015</small></div>
