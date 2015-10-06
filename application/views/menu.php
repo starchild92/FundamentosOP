@@ -4,9 +4,10 @@
 	$final = end(explode('/', $actual));
 ?>
  <link rel="shortcut icon" href="<?php echo base_url('images/ico.png'); ?>">
-<script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
+<style type="text/css">body { padding-top: 50px; padding-bottom: 20px; }</style>
+
 <div class="container">
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">

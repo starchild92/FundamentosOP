@@ -38,6 +38,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-theme.css');?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/cover.css');?>">
     <style type="text/css">
       body {

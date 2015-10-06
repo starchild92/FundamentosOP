@@ -14,7 +14,7 @@
 		</div>
 		<div class="container">
 		  <!-- Nav tabs -->
-		  <ul class="nav nav-pills nav-justified" role="tablist">
+		  <ul class="nav nav-tabs nav-justified" role="tablist">
 		    <li role="presentation" class="active"><a href="#dia1" aria-controls="dia1" role="tab" data-toggle="tab">Día 1</a></li>
 		    <li role="presentation"><a href="#dia2" aria-controls="dia2" role="tab" data-toggle="tab">Día 2</a></li>
 		    <li role="presentation"><a href="#dia3" aria-controls="dia3" role="tab" data-toggle="tab">Día 3</a></li>
@@ -24,7 +24,7 @@
 		  <div class="whitespace"></div>
 		  <!-- Tab panes -->
 		  <div class="tab-content">
-		    <div role="tabpanel" class="tab-pane active" id="dia1">
+		    <div role="tabpanel" class="tab-pane fade in active" id="dia1">
 		    	<div class="row">
 		    		<div class="col-lg-6 col-sm-6 col-xs-12">
 		    			say something I'm giving up on you
@@ -91,7 +91,7 @@
 					</div>
 		    	</div>
 		    </div>
-		    <div role="tabpanel" class="tab-pane" id="dia2">
+		    <div role="tabpanel" class="tab-pane fade" id="dia2">
 		    	<div class="row">
 		    		<div class="col-lg-6 col-sm-6 col-xs-12">
 		    			say something I'm giving up on you
@@ -158,7 +158,7 @@
 					</div>
 		    	</div>
 		    </div>
-		    <div role="tabpanel" class="tab-pane" id="dia3">
+		    <div role="tabpanel" class="tab-pane fade" id="dia3">
 		    	<div class="row">
 		    		<div class="col-lg-6 col-sm-6 col-xs-12">
 		    			say something I'm giving up on you
@@ -225,7 +225,7 @@
 					</div>
 		    	</div>
 		    </div>
-		    <div role="tabpanel" class="tab-pane" id="dia4">
+		    <div role="tabpanel" class="tab-pane fade" id="dia4">
 		    	<div class="row">
 		    		<div class="col-lg-6 col-sm-6 col-xs-12">
 		    			say something I'm giving up on you
@@ -292,7 +292,7 @@
 					</div>
 		    	</div>
 		    </div>
-		    <div role="tabpanel" class="tab-pane" id="dia5">
+		    <div role="tabpanel" class="tab-pane fade" id="dia5">
 		    	<div class="row">
 					<div class="col-lg-6 col-sm-6 col-xs-12">
 						say something I'm giving up on you
@@ -366,6 +366,7 @@
 	<script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
 	<script src="<?php echo base_url('js/bootstrap.js'); ?>"></script>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-theme.css');?>">
 	<style type="text/css">
 		#space{ padding-top: 20px; } #rigth{ float: right; }
 		.whitespace{ margin-top: 10px;}

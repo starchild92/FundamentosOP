@@ -5,7 +5,7 @@
 		<script type="text/javascript" src="<?php echo base_url('js/flotr.debug-0.2.0-alpha.js'); ?>"></script>
 		
 		<div id="wrapper">
-			<div id="container4" style="width:auto;height:400px;"></div>
+			<div id="container4" style="width:z;height:400px;"></div>
 		</div>
 
 		<script type="text/javascript">

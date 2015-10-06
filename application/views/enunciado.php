@@ -12,38 +12,32 @@
 <!-- NAVBAR ================================================== -->
 	<body>
 		<?php include_once('menu.php'); ?>
-
 		<div class="container">
 			<div class="page-header">
 				<h1><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Enunciado<small>  Descripción y requisitos del proyecto</small></h1>
 			</div>
 
-			<div class="col-md-6">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Descripción del Problema</div>
-					<div class="panel-body">
+			<div>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs nav-justified" role="tablist">
+					<li role="presentation" class="active"><a href="#descripcion" aria-controls="descripcion" role="tab" data-toggle="tab">I. Descripción del Problema</a></li>
+					<li role="presentation"><a href="#observaciones" aria-controls="observaciones" role="tab" data-toggle="tab">II. Observaciones</a></li>
+					<li role="presentation"><a href="#entrega" aria-controls="entrega" role="tab" data-toggle="tab">III. Entrega</a></li>
+					<li role="presentation"><a href="#objetivos" aria-controls="objetivos" role="tab" data-toggle="tab">IV. Objetivos</a></li>
+					<li role="presentation"><a href="#consideraciones" aria-controls="consideraciones" role="tab" data-toggle="tab">V. Consideraciones</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in content-tab-inside active" id="descripcion">
 						El comedor universitario de la universidad de Carabobo es el encargado de suministrar una alimentación balanceada y variada con productos de calidad a la comunidad universitaria. Sin embargo, es notable la longitud de las líneas de espera que se observan a las horas de almorzar, por esta razón se contrata su empresa <a style="color: rgb(92, 184, 92); text-shadow: none;"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span>  Queues</a>, como analistas de líneas de espera para hacer la evaluación de las mismas y generar propuesta que mejoren el funcionamiento de las líneas de espera.
 					</div>
-				</div>
-			</div>
-
-			<div class="col-md-6">
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						Observaciones
-					</div>
-					<div class="panel-body">
+					<div role="tabpanel" class="tab-pane fade content-tab-inside" id="observaciones">
 						<ul><li>El proyecto debe ser realizado en equipos de tres (3) estudiantes.</li>
 						<li>Los equipos que no cumplan con las consideraciones y observaciones establecidas para la elaboración del proyecto tendrán un porcentaje de descalificación sobre la nota total obtenida.</li>
 						<li>Los equipos que entreguen sus proyectos después de la fecha tope establecida tendrán dos (2) puntos de descalificación (sobre la nota total obtenida) por cada día continuo de retraso.</li></ul>
 					</div>
-				</div>
-			</div>
-
-			<div class="col-md-6">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Entrega</div>
-					<div class="panel-body">
+					<div role="tabpanel" class="tab-pane fade content-tab-inside" id="entrega">
 						La presentación del proyecto y la simulación se hará el día el día viernes 16 de octubre 2015. La entrega consiste de un archivo comprimido llamado “proyectoColas”, que contendrá:
 						<ul>
 						<li>Informe escrito con lo siguiente:</li>
@@ -60,25 +54,12 @@
 						</ul>
 						<li>Presentación de su propuesta  como analistas de líneas de esperas para hacer la evaluación de las mismas y generar propuesta que mejoren el funcionamiento de las líneas de esperas.</li>
 						<li>Programa de simulación de la línea de espera del comedor universitario en PHP</li>
-						
 						</ul>
 					</div>
-				</div>
-			</div>
-
-			<div class="col-md-6">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Objetivos</div>
-					<div class="panel-body">
+					<div role="tabpanel" class="tab-pane fade content-tab-inside" id="objetivos">
 						Realizar un estudio de las líneas de espera del Comedor Universitario de la Universidad de Carabobo campus Bárbula durante una semana completa, con la finalidad de establecer la situación actual del comedor. Simular las posibles situaciones de líneas de esperas del comedor y proponer la(s) solución(es).
 					</div>
-				</div>
-			</div>
-
-			<div class="col-md-6">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Consideraciones</div>
-					<div class="panel-body">
+					<div role="tabpanel" class="tab-pane fade content-tab-inside" id="consideraciones">
 						<ul>
 							<li>Hacer el estudio de las líneas de espera a la hora del almuerzo</li>
 							<li>La data debe ser recolectada antes del 14 de agosto 2015</li>
@@ -94,13 +75,12 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 	<?php include_once('footer.php'); ?>
 	<script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
 	<script src="<?php echo base_url('js/bootstrap.js'); ?>"></script>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
-	<style type="text/css"> #space{ padding-top: 20px; }</style>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-theme.css');?>">
 </body>
 </html>

@@ -6,6 +6,7 @@
 	<script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
 	<script src="<?php echo base_url('js/bootstrap.js'); ?>"></script>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-theme.css');?>">
 	<style type="text/css"> 
 		#space{ padding-top: 20px; }
 		.auto-size{ max-width: 100%; max-height: 100%; }
