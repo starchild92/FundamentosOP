@@ -30,9 +30,21 @@
 
 				return a * b / c;
 			}
+
+			function probabilidad(omega, t, phi){
+				e = Math.exp(1);
+				a = omega * t;
+				b = Math.pow(a, phi);
+				c = Math.pow(e, (-1 * a));
+				d = b * c;
+				f = factorial(phi);
+				return d / f;
+			}
 			
 			function graficar(){
 				var d0 = [];
+				var d1 = [];
+
 				var omega = document.getElementById("lambda").value;
 				var phi = document.getElementById("k").value;
 
@@ -42,22 +54,25 @@
 					document.getElementById('lambda').style.border = "1px solid #ddd";
 					for(var i = 0; i <= phi; i += 1){
 				        d0.push([i, poissonG(omega,i)]);
+				        d1.push([i, probabilidad(omega, 5, i)]);
 				    }
 					// Draw the graph
-				    f = Flotr.draw($('container1'),[  
-							{data:d0, label:'lambda: '+omega+'  y k:[0...'+phi+']', yaxis:1,  lines: {show: true}, points: {show: true}}
+				    f = Flotr.draw($('container1'),
+				    	[  
+							{data:d0, label:' Dist. de Poisson'/*'lambda: '+omega+'  y k:[0...'+phi+']'*/, yaxis:1,  lines: {show: true}, points: {show: false}},
+							{data: d1, label:' Dist. de Llegadas', lines: {show: true}, points: {show: false}}
 						],{
 							xaxis:{
 								noTicks: 10,
 								tickFormatter: function(n){ return n; }, // => displays tick values between brackets.
-								min: 0,	 // => part of the series is not displayed.
-								max: null,	// => part of the series is not displayed.
+								//min: 0,	 // => part of the series is not displayed.
+								//max: null,	// => part of the series is not displayed.
 								labelsAngle: 45,
 								title: 'k'
 							},
 							yaxis:{
 								noTicks: 10,
-								max: 1
+								//max: 1
 								//title: 'P(X=k)'
 							},
 							HtmlText: true,

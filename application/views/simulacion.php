@@ -5,7 +5,7 @@
 	<title>Proyecto de F.O.C - Información</title>
 	<script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
 	<script src="<?php echo base_url('js/bootstrap.js'); ?>"></script>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
+	<link rel="stylesheet" typne="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-theme.css');?>">
 	<style type="text/css"> 
 		#space{ padding-top: 20px; }
@@ -39,6 +39,35 @@
 							<h6>Función de Probabilidad de la Dist. de Poisson</h6>
 							<img class="auto-size" src="<?php echo base_url('images/poisson.png'); ?>">
 						</center>
+						<br>
+						<center>
+							<h6>Función de Probabilidad de la Dist. de Llegadas</h6>
+							<img class="auto-size" src="<?php echo base_url('images/llegadas.png'); ?>">
+						</center>
+						<br>
+						<p>Probabilidad de n llegadas al sistema. lambda es el promedio en un periodo t.</p>
+						<p>De nuestros datos recolectados durante un perido no consecutivo de 5 días, obtuvimos los siguiente promedios de llegadas a la cola de espera
+							<table class="table">
+								<tr>
+									<th>Día</th>
+									<th>1</th>
+									<th>2</th>
+									<th>3</th>
+									<th>4</th>
+									<th>5</th>
+									<th>total</th>
+								</tr>
+								<tr>
+									<th>Prom</th>
+									<td>19</td>
+									<td>16.5</td>
+									<td>17</td>
+									<td>12</td>
+									<td>21</td>
+									<td>17</td>
+								</tr>
+							</table>
+						</p>
 						<hr>
 						<p id="cambio">Cambie los valores de <span class="label label-info">Lambda λ</span> o <span class="label label-info">k</span>para modificar la curva.</p>
 						<form name="form1" method="POST" action="">
