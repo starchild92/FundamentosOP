@@ -38,6 +38,7 @@
 				c = Math.pow(e, (-1 * a));
 				d = b * c;
 				f = factorial(phi);
+
 				return d / f;
 			}
 			
@@ -47,6 +48,7 @@
 
 				var omega = document.getElementById("lambda").value;
 				var phi = document.getElementById("k").value;
+				var tee = document.getElementById("t").value;
 
 				if (phi >= 0 && omega >= 0) {
 					document.getElementById('cambio').innerHTML = "Cambie los valores de <span class='label label-info'>Lambda λ</span> o <span class='label label-info'>k</span> para modificar la curva.";
@@ -54,7 +56,7 @@
 					document.getElementById('lambda').style.border = "1px solid #ddd";
 					for(var i = 0; i <= phi; i += 1){
 				        d0.push([i, poissonG(omega,i)]);
-				        d1.push([i, probabilidad(omega, 5, i)]);
+				        d1.push([i, probabilidad(omega, tee, i)]);
 				    }
 					// Draw the graph
 				    f = Flotr.draw($('container1'),
@@ -63,16 +65,16 @@
 							{data: d1, label:' Dist. de Llegadas', lines: {show: true}, points: {show: false}}
 						],{
 							xaxis:{
-								noTicks: 10,
+								noTicks: phi,
 								tickFormatter: function(n){ return n; }, // => displays tick values between brackets.
-								//min: 0,	 // => part of the series is not displayed.
-								//max: null,	// => part of the series is not displayed.
+								min: 0,	 	// => part of the series is not displayed.
+								max: null,	// => part of the series is not displayed.
 								labelsAngle: 45,
-								title: 'k'
+								//title: 'k'
 							},
 							yaxis:{
 								noTicks: 10,
-								//max: 1
+								max: null
 								//title: 'P(X=k)'
 							},
 							HtmlText: true,

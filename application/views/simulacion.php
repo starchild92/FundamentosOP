@@ -10,6 +10,7 @@
 	<style type="text/css"> 
 		#space{ padding-top: 20px; }
 		.auto-size{ max-width: 100%; max-height: 100%; }
+		span .label{ width: 100%; }
 	</style>
 
 </head>
@@ -23,21 +24,27 @@
 		<!-- Inicio Primera Gráfica -->
 		<div class="row">
 			<div class="col-lg- 8 col-md-8 col-xs-12">
-				<div class="panel panel-warning">
+				<div class="panel panel-info">
 					<div class="panel-heading">Parámetros de Control</div>
 					<div class="panel-body">
 						<p id="cambio">Cambie los valores de <span class="label label-info">Lambda λ</span> o <span class="label label-info">k</span>para modificar la curva.</p>
 						<form name="form1" method="POST" action="">
-							<div class="col-lg-6 col-sm-6 col-xs 6">
-								<span class="label label-success">Lambda</span>
+							<div class="col-lg-4 col-sm-4 col-xs-12">
+								<span class="label label-info">Lambda λ</span>
 								<div class="input-group">
 									<input autocomplete="off" type="text" class="form-control" name="valor" value="<?php echo $valor; ?>" id="lambda" onkeyup="graficar()">
 								</div><!-- input group end -->
 							</div>
-							<div class="col-lg-6 col-sm-6 col-xs 6">
-								<span class="label label-success">K</span>
+							<div class="col-lg-4 col-sm-4 col-xs-12">
+								<span class="label label-info">K</span>
 								<div class="input-group">
 									<input autocomplete="off" type="text" class="form-control" name="k" value="<?php echo $k; ?>" id="k" onkeyup="graficar()">
+								</div><!-- input group end -->
+							</div>
+							<div class="col-lg-4 col-sm-4 col-xs-12">
+								<span class="label label-info">T</span>
+								<div class="input-group">
+									<input autocomplete="off" type="text" class="form-control" name="t" value="<?php echo $t; ?>" id="t" onkeyup="graficar()">
 								</div><!-- input group end -->
 							</div>
 						</form>
@@ -54,7 +61,7 @@
 			</div>
 			<div class="col-lg- 4 col-md-4 col-xs-12">
 				<div class="panel panel-warning">
-					<div class="panel-heading">Parámetros de Control</div>
+					<div class="panel-heading">Descrición de las Funciones</div>
 					<div class="panel-body">
 						<center>
 							<h6>Función de Probabilidad de la Dist. de Poisson</h6>
@@ -67,7 +74,7 @@
 						</center>
 						<br>
 						<p>Probabilidad de n llegadas al sistema. lambda es el promedio en un periodo t.</p>
-						<p>De nuestros datos recolectados durante un perido no consecutivo de 5 días, obtuvimos los siguiente promedios de llegadas a la cola de espera
+						<p>De nuestros datos recolectados durante un perido no consecutivo de 5 días, obtuvimos los siguiente promedios de llegadas a la cola de espera.
 							<table class="table">
 								<tr>
 									<th>Día</th>
@@ -88,7 +95,7 @@
 									<td>17</td>
 								</tr>
 							</table>
-						</p>
+						y la longitud de los intervalos en los cuales sea realizó la medición fue T = 5 min. Lo cual es horas es 0.08333</p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-sm-6 col-xs 6"><p><span class="label label-success">Lambda</span> es la tasa media de ocurrencia de los sucesos (llegadas o servicio)</p></div>
