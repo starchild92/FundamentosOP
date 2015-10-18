@@ -11,8 +11,11 @@
 		#space{ padding-top: 20px; }
 		.auto-size{ max-width: 100%; max-height: 100%; }
 		span .label{ width: 100%; }
+		.graficos{
+			width: 100%;
+			height: auto;
+		}
 	</style>
-
 </head>
 <body>
 	<?php include_once('menu.php'); ?>
@@ -97,6 +100,14 @@
 			</div>
 		</div>
 		<!-- Final Primera Gráfica -->
+		<div class="row">
+			<div class="col-lg-6">
+				<img class="graficos" src="<?php echo base_url('images/modelo_.gif') ?>">
+			</div>
+			<div class="col-lg-6">
+				<p>Dinámica del comedor hecho en un GIF</p>
+			</div>
+		</div>
 	</div>
 	<?php include_once('footer.php'); ?>
 </body>

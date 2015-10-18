@@ -37,7 +37,8 @@
 			<div class="col-lg-6">
 				<center>
 					<p><h1 style="font-size: 70px; color: rgba(92, 184, 92, 0.8);"><span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span></h1></p>
-					<p><a href="<?php echo base_url('informe/descargar'); ?>" class="btn btn-success btn-lg">Descargar Informe</a></p>
+					<p><a href="<?php echo base_url('informe/descargar_informe'); ?>" class="btn btn-success btn-lg">Descargar Informe</a></p>
+					<p><a href="<?php echo base_url('informe/descargar_excel'); ?>" class="btn btn-warning btn-lg">Descargar Datos de Excel</a></p>
 				</center>
 			</div>
 		</div>

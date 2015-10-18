@@ -30,7 +30,6 @@
 					<li <?php if ($final == 'graficas' || $final == 'value') { echo "class='active'"; } ?> ><a <?php if ($final == 'graficas') { echo "href='#'"; }else{ echo "href='".base_url('graficas')."'"; } ?> ><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>  Gráficas</a></li>
 					<li <?php if ($final == 'informe') { echo "class='active'"; } ?> ><a <?php if ($final == 'informe') { echo "href='#'"; }else{ echo "href='".base_url('informe')."'"; } ?> ><span class="glyphicon glyphicon-file" aria-hidden="true"></span>  Informe</a></li>
 					<li <?php if ($final == 'simulacion') { echo "class='active'"; } ?> ><a <?php if ($final == 'simulacion') { echo "href='#'"; }else{ echo "href='".base_url('simulacion')."'"; } ?> ><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>  Programa</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>  Bitácora</a></li>
 					<li <?php if ($final == 'informacion') { echo "class='active'"; } ?> ><a <?php if ($final == 'informacion') { echo "href='#'"; }else{ echo "href='".base_url('informacion')."'"; } ?> ><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>  Info</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->

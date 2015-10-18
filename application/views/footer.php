@@ -15,6 +15,14 @@
 		  /* Set the fixed height of the footer here */
 		  height: 155px;
 		}
+		.no{
+			text-decoration: line-through;
+		}
+		.gray {
+		  filter: gray; /* IE6-9 */
+		  filter: grayscale(1); /* Firefox 35+ */
+		  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+		}
 	</style>
 
 <footer class="footer">
@@ -46,12 +54,12 @@
 						<h5>Luis Pérez</h5>
 					</div><!-- /.col-md-4 col-xs-4 -->
 					<div class="col-md-4 col-xs-4">
-						<img data-toggle="tooltip" title="Some people want to set the world on fire." class="img-circle" src="<?php echo base_url('images/ivo.jpg'); ?>" alt="rude" width="85" height="85">
-						<h5>Ivonne Ortega</h5>
+						<img data-toggle="tooltip" title="Some people want to set the world on fire." class="img-circle gray" src="<?php echo base_url('images/ivo.jpg'); ?>" alt="rude" width="85" height="85">
+						<h5 class="no">Ivonne Ortega</h5>
 					</div><!-- /.col-md-4 col-xs-4 -->
 					<div class="col-md-4 col-xs-4">
-						<img data-toggle="tooltip" title="There is not enough chocolat in the world!" class="img-circle" src="<?php echo base_url('images/oli.jpeg'); ?>" alt="rude" width="85" height="85">
-						<h5>Olinda López</h5>
+						<img data-toggle="tooltip" title="There is not enough chocolat in the world!" class="img-circle gray" src="<?php echo base_url('images/oli.jpeg'); ?>" alt="rude" width="85" height="85">
+						<h5 class="no">Olinda López</h5>
 					</div><!-- /.col-md-4 -->
 				</center>
 			</div>

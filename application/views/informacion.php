@@ -29,12 +29,12 @@
           <h4>Luis Pérez</h4>
         </div><!-- /.col-lg-4 col-sm-4 col-xs-12 -->
         <div class="col-lg-4 col-sm-4 col-xs-12">
-          <img class="img-circle" src="<?php echo base_url('images/ivo.jpg'); ?>" alt="rude" width="140" height="140">
-          <h4>Ivonne Ortega</h4>
+          <img class="img-circle gray" src="<?php echo base_url('images/ivo.jpg'); ?>" alt="rude" width="140" height="140">
+          <h4 class="no">Ivonne Ortega</h4>
         </div><!-- /.col-lg-4 col-sm-4 col-xs-12 -->
         <div class="col-lg-4 col-sm-4 col-xs-12">
-          <img class="img-circle" src="<?php echo base_url('images/oli.jpeg'); ?>" alt="rude" width="140" height="140">
-          <h4>Olinda López</h4>
+          <img class="img-circle gray" src="<?php echo base_url('images/oli.jpeg'); ?>" alt="rude" width="140" height="140">
+          <h4 class="no">Olinda López</h4>
         </div><!-- /.col-lg-4 col-sm-4 col-xs-12 -->
         <p>para la materia Fundamentos de Optimización Computacional</p>
         <p class="lead">  
@@ -63,6 +63,14 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }
+      .no{
+      text-decoration: line-through;
+    }
+    .gray {
+      filter: gray; /* IE6-9 */
+      filter: grayscale(1); /* Firefox 35+ */
+      -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    }
     </style>
 </body>
 </html>
