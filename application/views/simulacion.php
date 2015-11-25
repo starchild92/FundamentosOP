@@ -101,11 +101,13 @@
 		</div>
 		<!-- Final Primera Gráfica -->
 		<div class="row">
-			<div class="col-lg-6">
-				<img class="graficos" src="<?php echo base_url('images/modelo_.gif') ?>">
+			<div class="col-lg-6" style="float: none; margin: 0 auto;">
+				<div class="page-header"><h3>Dinámica del comedor hecho en un GIF</h3></div>
 			</div>
-			<div class="col-lg-6">
-				<p>Dinámica del comedor hecho en un GIF</p>
+		</div>
+		<div class="row">
+			<div class="col-lg-6" style="float: none; margin: 0 auto;">
+				<img class="graficos" src="<?php echo base_url('images/modelo_.gif') ?>">
 			</div>
 		</div>
 	</div>

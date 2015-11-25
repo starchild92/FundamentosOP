@@ -30,7 +30,7 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Elaborador por <a href="http://twitter.com/lapv20">@LuisPérez</a>, <a href="#" class="no">@IvonneOrtega</a> & <a href="#" class="no">@OlindaLópez</a> en Agosto-Septiembre de 2015.</p>
+              <p>Elaborador por <a href="http://twitter.com/lapv20">@LuisPérez</a><!--, <a href="#" class="no">@IvonneOrtega</a> & <a href="#" class="no">@OlindaLópez</a>--> en Agosto-Septiembre de 2015.</p>
             </div>
           </div>
         </div>
