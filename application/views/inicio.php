@@ -48,10 +48,12 @@
         background-image: url("<?php echo base_url('images/cover_fondo1.png'); ?>");
         background-repeat: no-repeat;
         background-size: 100% 135%;
+        overflow: hidden;
       }
       .no{
       text-decoration: line-through;
     }
+
     </style>
 </body>
 </html>

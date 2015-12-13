@@ -15,7 +15,7 @@
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">¡ups!</h1>
+            <h1 class="cover-heading">¡404!</h1>
             <p class="lead">Parece que la página que ha solicitado no existe y si ve un unicornio presione "Ir al Inicio".</p>
             <img src="<?php echo base_url('images/404rainbow.png'); ?>">
             <p class="lead">
@@ -25,7 +25,7 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Elaborador por <a href="http://twitter.com/lapv20">@LuisPérez</a>, <a href="https://twitter.com/Ivovovone">@IvonneOrtega</a> & <a href="https://twitter.com/oli_lo">@OlindaLópez</a> en Agosto-Septiembre de 2015.</p>
+              <p>Elaborador por <a href="http://twitter.com/lapv20">@LuisPérez</a> en Agosto-Septiembre de 2015.</p>
             </div>
           </div>
         </div>

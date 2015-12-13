@@ -8,12 +8,13 @@
 	<link rel="stylesheet" typne="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-theme.css');?>">
 	<style type="text/css"> 
-		#space{ padding-top: 20px; }
-		.auto-size{ max-width: 100%; max-height: 100%; }
-		span .label{ width: 100%; }
 		.graficos{
 			width: 100%;
 			height: auto;
+		}
+		h4 { font-weight: bold; }
+		div .panel-body_{
+			padding: 5px !important;
 		}
 	</style>
 </head>
@@ -24,87 +25,122 @@
 		<div class="page-header">
 			<h1><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Programa de Simulación<small>  de la línea de espera del comedor universitario</small></h1>
 		</div>
-		<!-- Inicio Primera Gráfica -->
+		<!-- inicio del simulador -->
 		<div class="row">
-			<div class="col-lg- 8 col-md-8 col-xs-12">
-				<div class="panel panel-success">
-					<!--<div class="panel-heading">_</div>-->
-					<div class="panel-body">
-						<?php $this->load->view('flotr_simulacion') ?>
-					</div>
-					<!--<div class="panel-footer">___</div>-->
-				</div>
-			</div>
-			<div class="col-lg- 4 col-md-4 col-xs-12">
-				<div class="panel panel-warning">
-					<div class="panel-heading">Descrición de las Funciones</div>
-					<div class="panel-body">
-						<center>
-							<h6>Función de Probabilidad de la Dist. de Poisson</h6>
-							<img class="auto-size" src="<?php echo base_url('images/poisson.png'); ?>">
-						</center>
-						<!--<br>
-						<center>
-							<h6>Función de Probabilidad de la Dist. de Llegadas</h6>
-							<img class="auto-size" src="<?php echo base_url('images/llegadas.png'); ?>">
-						</center>
-						<br>
-						<p>Probabilidad de n llegadas al sistema. lambda es el promedio en un periodo t.</p>
-						<p>De nuestros datos recolectados durante un perido no consecutivo de 5 días, obtuvimos los siguiente promedios de llegadas a la cola de espera.
-							<table class="table">
-								<tr>
-									<th>Día</th>
-									<th>1</th>
-									<th>2</th>
-									<th>3</th>
-									<th>4</th>
-									<th>5</th>
-									<th>total</th>
-								</tr>
-								<tr>
-									<th>Prom</th>
-									<td>19</td>
-									<td>16.5</td>
-									<td>17</td>
-									<td>12</td>
-									<td>21</td>
-									<td>17</td>
-								</tr>
-							</table>
-						y la longitud de los intervalos en los cuales sea realizó la medición fue T = 5 min. Lo cual es horas es 0.08333</p>-->
+			<div class="col-lg-12 col-md-12 col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">El Modelo que Simula este Sistema se define como:</div>
+					<div class="panel-body panel-body_">
+
+						<div class="col-lg-3 col-md-3 col-xs-12">
+							<h4>Reloj de Simulación</h4>
+							<p>Tiempo <span class="label label-default">t</span>, transcurrido en segundos hasta el momento</p>
+							<h4>Estado del Sistema</h4>
+							<p><span class="label label-default"><i>N(t)</i></span>= Número de personas en el comedor en el tiempo <span class="label label-default">t</span></p>
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-xs-12">
+							<h4>Posibles Estados</h4>
+							<p>0 ≤ N(t) ≤ ∞</p>
+							<h4>Formula de Transición de Estado</h4>
+							<div class="col-lg-3" style="padding: 0px;"><p>N(t + t<sub>e</sub>)</p></div>
+							<div class="col-lg-9"><p>N(t) + 1, ocurre una llegada en el tiempo <span class="label label-default">t</span></p>
+							<p>N(t) - 1, ocurre una terminación del servicio en el tiepo <span class="label label-default">t</span></p></div>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-xs-12">
+							<h4>Método generador de Eventos</h4>
+							<div class="col-lg-6" style="padding: 0px;"><p>Para el <b>tiempo entre llegadas</b> al sistema se usará un generador de números aleatorios distribuidos de manera exponencial con media <span class="label label-default">15</span><center>p = −15ln(r) µs</center></p></div>
+							<div class="col-lg-6" style="padding: 0px;"><p>Para el <b>tiempo de servicio</b> se usará un generador de números aleatorios distribuidos de manera exponencial con media <span class="label label-default">13</span><center>q = −13ln(r) µs</center></p></div>
+							<p>t<sub>e</sub> ∈ {p, q}</p>
+						</div>
 					</div>
 				</div>
-				<div class="panel panel-info">
-					<div class="panel-heading">Parámetros de Control</div>
-					<div class="panel-body">
-						<p id="cambio">Cambie los valores de <span class="label label-info">Lambda λ</span> o <span class="label label-info">k</span>para modificar la curva.</p>
-						<form name="form1" method="POST" action="">
-							<div class="col-lg-6 col-sm-6 col-xs-12">
-								<span class="label label-info">Lambda λ</span>
-								<div class="input-group">
-									<input autocomplete="off" type="text" class="form-control" name="valor" value="<?php echo $valor; ?>" id="lambda" onkeyup="graficar()">
-								</div><!-- input group end -->
-							</div>
-							<div class="col-lg-6 col-sm-6 col-xs-12">
-								<span class="label label-info">K</span>
-								<div class="input-group">
-									<input autocomplete="off" type="text" class="form-control" name="k" value="<?php echo $k; ?>" id="k" onkeyup="graficar()">
-								</div><!-- input group end -->
-							</div>
-							
-						</form>
-					</div>
-				</div>
-				<div class="col-lg-6 col-sm-6 col-xs 6"><p><span class="label label-success">Lambda</span> es la tasa media de ocurrencia de los sucesos (llegadas o servicio)</p></div>
-				<div class="col-lg-6 col-sm-6 col-xs 6"><p><span class="label label-success">K</span> es la ocurrencia del fénomeno</p></div>
 			</div>
 		</div>
-		<!-- Final Primera Gráfica -->
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="col-lg-6">
+							<div class="input-group">
+								 <span class="input-group-addon" id="sizing-addon1">@</span>
+								 <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="input-group">
+								 <span class="input-group-addon" id="sizing-addon1">@</span>
+								 <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+							</div>
+						</div>
+					</div>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Tiempo <span class="label label-default">t</span></th>
+								<th>N(<i>t</i>)</th>
+								<th>r<sub>llegada</sub></th>
+								<th>Sig. tiempo entre llegadas</th>
+								<th>r<sub>servicio</sub></th>
+								<th>Sig. tiempo de servicio</th>
+								<th>Sig. Llegada</th>
+								<th>Sig. Salida</th>
+								<th>Sig. Evento</th>
+							</tr>
+						</thead>
+						<tbody>
+						<?php
+							$t = 0.00;
+							$nt = 0.00;
+
+							//Para el Método Congruencial Mixto
+							$semilla = 15; //Xn+11
+							$a = 13;
+							$c = 16;
+							$mod = 100;
+
+							$metodo_congruente = [];
+
+							for ($n=0; $n < 50; $n++) { 
+								$numero_uniforme = (($a * $semilla) + $c) % $mod;
+								$semilla = $numero_uniforme;
+								$metodo_congruente[] = $numero_uniforme/$mod;
+							}
+
+
+
+							for ($i=0; $i < 20; $i++) {
+						?>
+							<tr>
+								<td><?php echo $t; ?></td>
+								<td><?php echo $nt; ?></td>
+								<td><?php echo number_format($metodo_congruente[$i], 3); ?></td>
+								<td><?php 
+								echo number_format((-15 * log($metodo_congruente[$i])), 4); ?></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<?php } ?>
+						</tbody>
+					</table>
+					<?php //$this->load->view('flotr_simulacion') ?>
+					
+				</div>
+			</div>
+		</div>
+		<!-- Final del Row Superior -->
+
 		<div class="row">
 			<div class="col-lg-6" style="float: none; margin: 0 auto;">
 				<div class="page-header"><h3>Dinámica del comedor hecho en un GIF</h3></div>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="col-lg-6" style="float: none; margin: 0 auto;">
 				<img class="graficos" src="<?php echo base_url('images/modelo_.gif') ?>">

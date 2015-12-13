@@ -15,7 +15,7 @@
 		<!-- Inicio Primera Gráfica -->
 		<div class="row">
 			<div class="col-md-8">
-				<div class="panel panel-primary">
+				<div class="panel panel-default">
 					<div class="panel-heading">1. Distribución de Probabilidades de las Llegadas al Sistema</div>
 					<div class="panel-body">
 						<?php $this->load->view('flotr1') ?>
@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="panel panel-info">
+				<div class="panel panel-default">
 					<div class="panel-heading">ajustada a los siguientes parámetros</div>
 					<div class="panel-body">
 						<center>
@@ -40,7 +40,7 @@
 		<!-- Inicio Segunda Gráfica -->
 		<div class="row">
 			<div class="col-md-8">
-				<div class="panel panel-primary">
+				<div class="panel panel-default">
 					<div class="panel-heading">2. Distribución de Probabilidades del Tiempo Medio entre Llegadas al Sistema</div>
 					<div class="panel-body">
 						<?php $this->load->view('flotr2') ?>
@@ -49,7 +49,7 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="panel panel-info">
+				<div class="panel panel-default">
 					<div class="panel-heading">ajustada a los siguientes parámetros</div>
 					<div class="panel-body">
 						<center>
@@ -65,7 +65,7 @@
 		<!-- Inicio Tercera Gráfica -->
 		<div class="row">
 			<div class="col-md-8">
-				<div class="panel panel-primary">
+				<div class="panel panel-default">
 					<div class="panel-heading">3. Distribución de Probabilidades del Servicio (por Servidor)</div>
 					<div class="panel-body">
 						<?php $this->load->view('flotr3') ?>
@@ -74,7 +74,7 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="panel panel-info">
+				<div class="panel panel-default">
 					<div class="panel-heading">ajustada a los siguientes parámetros</div>
 					<div class="panel-body">
 						<center>
@@ -90,7 +90,7 @@
 		<!-- Inicio Cuarta Gráfica -->
 		<div class="row">
 			<div class="col-md-8">
-				<div class="panel panel-primary">
+				<div class="panel panel-default">
 					<div class="panel-heading">4. Distribución de Probabilidades del Tiempo Medio de Servicio (por Servidor)</div>
 					<div class="panel-body">
 						<?php $this->load->view('flotr4') ?>
@@ -99,7 +99,7 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="panel panel-info">
+				<div class="panel panel-default">
 					<div class="panel-heading">ajustada a los siguientes parámetros</div>
 					<div class="panel-body">
 						<center>
@@ -116,6 +116,7 @@
 	<?php include_once('footer.php'); ?>
 	<script src="<?php echo base_url('js/bootstrap.js'); ?>"></script>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-theme.css');?>">
 	<style type="text/css"> 
 		#space{ padding-top: 20px; }
 		.auto-size{ max-width: 100%; max-height: 100%; }

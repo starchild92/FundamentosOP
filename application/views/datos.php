@@ -27,7 +27,7 @@
 		    <div role="tabpanel" class="tab-pane fade in active" id="dia1">
 		    	<div class="row">
 		    		<div class="col-lg-8 col-sm-8 col-xs-12">
-						<div class="panel panel-primary">
+						<div class="panel panel-default">
 							<div class="panel-heading">Día 1<small id="rigth">Martes, 04 de Agosto 2015</small></div>
 							<div class="panel-body">
 								<table id="firstTable" class="table table-condensed">
@@ -54,7 +54,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-sm-4 col-xs-12">
-						<div class="panel panel-primary">
+						<div class="panel panel-default">
 							<div class="panel-heading">Datos recolectados</div>
 								<div class="panel-body">
 				    				<table class="table table-condensed">
@@ -88,7 +88,7 @@
 		    <div role="tabpanel" class="tab-pane fade" id="dia2">
 		    	<div class="row">
 		    		<div class="col-lg-8 col-sm-8 col-xs-12">
-						<div class="panel panel-primary">
+						<div class="panel panel-default">
 							<div class="panel-heading">Día 2<small id="rigth">Miercoles, 05 de Agosto 2015</small></div>
 							<div class="panel-body">
 								<table id="firstTable" class="table table-condensed">
@@ -115,7 +115,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-sm-4 col-xs-12">
-						<div class="panel panel-primary">
+						<div class="panel panel-default">
 							<div class="panel-heading">Datos recolectados</div>
 								<div class="panel-body">
 				    				<table class="table table-condensed">
@@ -149,7 +149,7 @@
 		    <div role="tabpanel" class="tab-pane fade" id="dia3">
 		    	<div class="row">
 		    		<div class="col-lg-8 col-sm-8 col-xs-12">
-						<div class="panel panel-primary">
+						<div class="panel panel-default">
 							<div class="panel-heading">Día 3<small id="rigth">Jueves, 6 de Agosto de 2015</small></div>
 							<div class="panel-body">
 								<table id="firstTable" class="table table-condensed">
@@ -176,7 +176,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-sm-4 col-xs-12">
-						<div class="panel panel-primary">
+						<div class="panel panel-default">
 							<div class="panel-heading">Datos recolectados</div>
 								<div class="panel-body">
 				    				<table class="table table-condensed">
@@ -209,7 +209,7 @@
 			<div role="tabpanel" class="tab-pane fade" id="dia4">
 		    	<div class="row">
 		    		<div class="col-lg-8 col-sm-8 col-xs-12">
-						<div class="panel panel-primary">
+						<div class="panel panel-default">
 							<div class="panel-heading">Día 4<small id="rigth">Viernes, 7 de Agosto de 2015</small></div>
 							<div class="panel-body">
 								<table id="firstTable" class="table table-condensed">
@@ -236,7 +236,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-sm-4 col-xs-12">
-						<div class="panel panel-primary">
+						<div class="panel panel-default">
 							<div class="panel-heading">Datos recolectados</div>
 								<div class="panel-body">
 				    				<table class="table table-condensed">
@@ -269,7 +269,7 @@
 		    <div role="tabpanel" class="tab-pane fade" id="dia5">
 		    	<div class="row">
 		    		<div class="col-lg-8 col-sm-8 col-xs-12">
-						<div class="panel panel-primary">
+						<div class="panel panel-default">
 							<div class="panel-heading">Día 5<small id="rigth">Lunes, 10 de Agosto de 2015</small></div>
 							<div class="panel-body">
 								<table id="firstTable" class="table table-condensed">
@@ -295,7 +295,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-sm-4 col-xs-12">
-						<div class="panel panel-primary">
+						<div class="panel panel-default">
 							<div class="panel-heading">Datos recolectados</div>
 								<div class="panel-body">
 				    				<table class="table table-condensed">
